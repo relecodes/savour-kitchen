@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fresh food, generous portions and easy takeaway ordering at Savour Kitchen.">
+  <title>Savour Kitchen | Good Food, Good Mood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Freshly prepared. Made with love. Served daily.</div>
+
+  <header class="header">
+    <a href="#home" class="logo">
+      <span class="logo-mark">S</span>
+      <span>SAVOUR<span class="logo-sub">KITCHEN & TAKEAWAY</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#about">Our Story</a>
+      <a href="#contact">Find Us</a>
+      <a href="#menu" class="nav-order">Order food ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow"><span class="dot"></span> GOOD FOOD, MADE FRESH</span>
+        <h1>Your cravings.<br>Your <span>kind of food.</span></h1>
+        <p>From juicy burgers to crispy golden chips, find your new favourite meal. Fresh flavours, generous portions and good vibes in every bite.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="button button-dark">Explore our menu <span>→</span></a>
+          <a href="#about" class="text-link">Get to know us ↗</a>
+        </div>
+        <div class="hero-note">
+          <div class="avatars"><span>F</span><span>R</span><span>E</span></div>
+          <div><strong>Made fresh, every day</strong><small>Your next favourite meal awaits.</small></div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1100&q=85" alt="Juicy burger with fresh lettuce and tomato">
+        <div class="image-tag"><span>✳</span><div><strong>Big flavour.</strong><small>Zero fuss.</small></div></div>
+        <div class="image-caption">GOOD FOOD STARTS HERE.</div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span>✳</span><p><strong>Made fresh</strong><small>Prepared to order</small></p></div>
+      <div><span>♡</span><p><strong>Made with love</strong><small>Quality ingredients</small></p></div>
+      <div><span>↗</span><p><strong>Easy ordering</strong><small>Order via WhatsApp</small></p></div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading">
+        <div><span class="eyebrow">A LITTLE SOMETHING DELICIOUS</span><h2>What's on <span>the menu?</span></h2></div>
+        <p>Big cravings call for good food.<br>Pick your favourites and let's eat.</p>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="all">All favourites</button>
+        <button class="filter" data-category="burgers">Burgers</button>
+        <button class="filter" data-category="mains">Main meals</button>
+        <button class="filter" data-category="sides">Sides</button>
+        <button class="filter" data-category="drinks">Drinks</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+
+      <div class="order-bar">
+        <div><span class="order-icon">🛍</span><div><strong id="cartCount">Your order is empty</strong><small id="cartHint">Add something delicious to get started.</small></div></div>
+        <div class="order-total"><small>ORDER TOTAL</small><strong id="cartTotal">R0.00</strong></div>
+        <button class="button button-dark" id="checkoutBtn">Order on WhatsApp ↗</button>
+      </div>
+      <p class="demo-note">Demo menu and prices. Final menu, prices and availability should be confirmed with the restaurant.</p>
+    </section>
+
+    <section class="story-section" id="about">
+      <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=85" alt="Freshly grilled food prepared for sharing" loading="lazy">
+        <span class="story-stamp">GOOD FOOD<br>GOOD MOOD ✳</span>
+      </div>
+      <div class="story-content">
+        <span class="eyebrow">MORE THAN JUST A MEAL</span>
+        <h2>Come hungry.<br>Leave <span>happy.</span></h2>
+        <p>At Savour Kitchen, we believe good food brings people together. Whether you're grabbing a quick lunch, feeding the family or treating yourself, there's always something worth coming back for.</p>
+        <p>Freshly prepared favourites, friendly service and a little extra love in every order.</p>
+        <a href="#menu" class="button button-dark">Find your favourite →</a>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <span class="eyebrow">YOUR NEXT MEAL IS CALLING</span>
+      <h2>Hungry yet?</h2>
+      <p>Skip the scrolling. Choose your favourites and send your order straight to us on WhatsApp.</p>
+      <a href="#menu" class="button button-light">Let's get eating ↗</a>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div><span class="eyebrow">COME THROUGH</span><h2>Let's make it <span>easy.</span></h2><p>Questions, takeaway orders or just saying hello? We'd love to hear from you.</p></div>
+      <div class="contact-details">
+        <div><span>📍</span><p><strong>Find us</strong><small id="addressText">Add restaurant address here</small></p></div>
+        <div><span>◷</span><p><strong>Opening hours</strong><small>Monday – Sunday · Confirm hours with us</small></p></div>
+        <div><span>☏</span><p><strong>Call or WhatsApp</strong><small id="phoneText">Add restaurant phone number</small></p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo footer-logo"><span class="logo-mark">S</span><span>SAVOUR<span class="logo-sub">KITCHEN & TAKEAWAY</span></span></a>
+    <p>Good food. Good mood. Always.</p>
+    <span>© <span id="year"></span> Savour Kitchen. Demo website by Rele Codes.</span>
+  </footer>
+</body>
+</html>
